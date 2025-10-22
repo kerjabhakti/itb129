@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            background-color: #ffe6c1;
+        }
+        img{
+            margin: 20px;
+            border-radius:  13px;
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+            margin: 20px;
+            color: #545454;
+        }
+        h2{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: medium;
+            margin:0%;
+        }
+        .data{
+            background-color:antiquewhite;
+            margin: 20px;
+            padding: 19px;
+            border-radius:  17px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: small;
+        }
+        .porto{
+            background-color:antiquewhite;
+            margin: 20px;
+            padding: 13px;
+            border-radius:  17px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        p{
+            margin: 20px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Club Seni</h1>
+    <img 
+    src="https://assets-a1.kompasiana.com/items/album/2020/02/26/pengertian-seni-menurut-ahli-5e569453d541df72876a2a12.jpg"
+    alt="Pendaftaran Club"
+    width="350"
+    height="175"
+    title="Seni"
+    />
+    <div class="data">
+        <form action="submit.php" method="post">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required/><br/>
+        <label for="tanggal"><b></b>Tanggal Lahir:</label>
+        <input type="date" id="tanggal" name="tanggal" required/><br/>
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat" required/><br/>
+        <label for="No">Nomor Telepon:</label>
+        <input type="text" id="No" name="No" required/><br/>
+        <label for="asal">Nama Sekolah:</label>
+        <input type="text" id="asal" name="asal" required/><br/>
+        <label for="kategori">Bidang Seni:</label><br/>
+        <input type="radio" id="Seni Tari" name="kategori" value="Seni Tari" />
+        <label for="Seni Tari">Seni Tari</label>
+        <input type="radio" id="Seni Musik" name="kategori" value="Seni Musik" />
+        <label for="Seni Musik">Seni Musik</label>
+        <input type="radio" id="Seni Rupa" name="kategori" value="Seni Rupa" />
+        <label for="Seni Rupa">Seni Rupa</label>
+        <input type="radio" id="Teater" name="kategori" value="Teater" />
+        <label for="Teater">Teater</label>
+    </div>
+    <div class="porto">
+            <h2>
+                <label for="portofolio">Kirimkan Portofoliomu!!</label>
+            </h2><br/>
+            <input type="file" id="portofolio" name="portofolio" required/>
+    </div>
+    <p><input type="submit" value="Daftar" /></p>
+    </form>
+</body>
+</html>
