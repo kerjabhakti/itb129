@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Grid dan Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            font-weight: bold;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+            margin-top: 20px;
+        }
+        .item {
+            background-color: #4093d4; /* warna biru */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+        .item3 {
+            background-color: #e55443; /* warna merah */
+        }
+        .item6 {
+            background-color: #3ca64c; /* warna hijau */
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid dan Selector</h1>
+    <div class="grid-container">
+        <div class="item">Kotak 1</div>
+        <div class="item">Kotak 2</div>
+        <div class="item item3">Kotak 3 (Spesial)</div>
+        <div class="item">Kotak 4</div>
+        <div class="item">Kotak 5</div>
+        <div class="item item6">Kotak 6 (Unik)</div>
+    </div>
+</body>
+</html>
